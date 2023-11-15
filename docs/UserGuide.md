@@ -407,7 +407,7 @@ Using the find command will update the filter status to `Filter by: name`. The f
 You can use the `sort` command to sort your list of contacts so that you can efficiently locate contacts with special characteristics that you are looking for. 
 If the list is currently filtered in a certain manner (using [`find`](#find-a-contact-find-name) or [`filter`](#filter-contacts-list-filter-by-field-with-term)), the updated list will also be filtered in the same manner.
 
-<div markdown="span" class="alert alert-wanring"> :bulb: **Note:**
+<div markdown="span" class="alert alert-warning"> :bulb: **Note:**
 When you first open _NetworkBook_, the list starts off sorted by **name** in **ascending** order.
 </div>
 
