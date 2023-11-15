@@ -124,7 +124,7 @@ In _NetworkBook_, you can manage contact information by changing the fields assi
 
 </div>
 
-<div markdown="block" class="alert alert-secondary">
+<div markdown="block" class="alert alert-info">
 <span id="indices">:information_source: **Indices**</span>
 
 In _NetworkBook_, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
@@ -233,8 +233,8 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-primary">
+:infomation_source: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
 
@@ -301,7 +301,7 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-secondary">
+<div markdown="span" class="alert alert-primary">
 :information_source: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
@@ -332,11 +332,11 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 
 You can remove all contacts from your _NetworkBook_ using the `clear` command, so that you can repopulate _NetworkBook_ with a new set of contact details more efficiently.
 
-<div markdown="span" class="alert alert-warning">:warning: **Warning:**
+<div markdown="span" class="fa fa-info">:warning: **Warning:**
 This command deletes **all** of your contacts. Only do this if you are sure.
 </div>
 
-<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
+<div markdown="span" class="alert alert-warning">:bulb: **Tip:**
 You can undo a clear command using [`undo`](#undo-last-change-to-networkbook-undo).
 </div>
 
@@ -381,7 +381,7 @@ If the list is currently sorted in a particular manner (using [`sort`](#sort-con
 
 * `[name]` is a term found in the names of the contacts you wish to find.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning"> :bulb: **Note:**
 Using the find command will update the filter status to `Filter by: name`. The find command will also override a filter command if you used it, and vice versa.
 </div>
 
@@ -404,7 +404,7 @@ Using the find command will update the filter status to `Filter by: name`. The f
 You can use the `sort` command to sort your list of contacts so that you can efficiently locate contacts with special characteristics that you are looking for. 
 If the list is currently filtered in a certain manner (using [`find`](#find-a-contact-find-name) or [`filter`](#filter-contacts-list-filter-by-field-with-term)), the updated list will also be filtered in the same manner.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-wanring"> :bulb: **Note:**
 When you first open _NetworkBook_, the list starts off sorted by **name** in **ascending** order.
 </div>
 
@@ -427,7 +427,7 @@ When you first open _NetworkBook_, the list starts off sorted by **name** in **a
     * `asc`/`ascending` - Sort in ascending order
     * `desc`/`descending` - Sort in descending order
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning"> :bulb: **Note:**
 If sorting by an optional field (i.e. `graduation` or `priority`), all contacts without that field will be placed at the bottom of the sorted list regardless of sorting order.
 </div>
 
@@ -451,7 +451,7 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 You can use the `filter` command to filter your list of contacts, temporarily hiding contacts that don't contain certain keywords
 for easy viewing. If the list is currently sorted (using [`sort`](#sort-contacts-list-sort-by-field-name-order-ascdesc)), the newly filtered list will be still be sorted in the same manner as before.
 
-<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
+<div markdown="span" class="alert alert-warning"> :bulb: **Tip:**
 You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-undo). You can reset filtering at any time using [`list`](#list-all-contacts-list).
 </div>
 
@@ -479,7 +479,7 @@ specified above.
     * `true` - Remove contacts who have finished/haven't started the course as of the current date of your system.
     * `false` - (default). Include all contacts with matching course terms in the filtered list regardless of course dates.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning"> :bulb: **Note:**
 `taken` compares the dates of the course with the current date of
 your system. It does not factor in other fields like graduation year.
 </div>
@@ -512,7 +512,7 @@ You can use the `open` command to open a contact's link so that you can convenie
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[link index]` is the [index](#indices) of the link within the contact's link list.
 
-<div markdown="span" class="alert alert-secondary">
+<div markdown="span" class="alert alert-primary">
 :information_source: **Note:**
 It is optional to provide the link index. If not specified, it will **default to 1**.
 
@@ -543,7 +543,7 @@ You can use the `email` command to open the default mailbox application to compo
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[email index]` is the [index](#indices) of the email address within the contact's email list.
 
-<div markdown="span" class="alert alert-secondary">
+<div markdown="span" class="alert alert-primary">
 :information_source: **Note:**
 It is optional to provide the email index. If not specified, it will **default to 1**.
 </div>
@@ -620,7 +620,7 @@ You can use the `help` command to open a help window containing a link to this u
 
 You can use the `save` command to manually save your contacts to the data file.
 
-<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
+<div markdown="span" class="alert alert-warning">:bulb: **Tip:**
 **You do not need to manually save in most cases** -- _NetworkBook_ automatically saves your data, as long as it has permission to write to the data file.
 You may need to manually save if _NetworkBook_'s permission to write to the data file is compromised.
 </div>
@@ -692,8 +692,8 @@ Note that this only works when the command box is not active. If you are typing 
 * `ctrl-W`: exit _NetworkBook_ (equivalent to [`exit` command](#exit-networkbook-exit))
 * `F1`: view help window (equivalent to [`help` command](#view-help-window-help))
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="fa fa-info">
+:warning: **Note:**
 If the `F1` key is bound to a different function in your computer settings, the keyboard shortcut to view help window may not work as expected.
 </div>
 [Table of Contents](#table-of-contents)
