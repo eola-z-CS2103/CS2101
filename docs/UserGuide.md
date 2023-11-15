@@ -125,12 +125,11 @@ In NetworkBook, you can manage contact information by changing the fields assign
 </div>
 
 <div markdown="block" class="alert alert-secondary">
-
 <span id="indices">:information_source: **Indices**</span>
 
 In NetworkBook, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
 
-Make sure to provide indices that has a corresponding item in your NetworkBook. The exact valid range is from 1 to 2147483647 inclusive. If your command contains an invalid index, it will be considered an invalid command.
+Make sure to provide indices that has a corresponding item in your NetworkBook. If your command contains an invalid index, an error message will be shown.
 
 </div>
 
@@ -176,7 +175,7 @@ Format: `add [index] [field prefix] [field value] ...`
 
 Parameters:
 
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
+* `[index]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the corresponding field to add.
 * `[field value]` is the value to add to the field specified by the preceding prefix.
 
@@ -189,7 +188,6 @@ To view a comprehensive list of multi-valued fields and their prefixes, go to th
 </div>
 
 <div markdown="span" class="alert alert-warning">
-
 :bulb: This command ignores any input field values that are already present in your target contact.
 For example, if your contact at index `1` already has the phone number `12345678`, the command `add 1 /phone 12345678` does nothing.
 
@@ -216,10 +214,10 @@ Format:
 
 Parameters:
 
-* `[index of contact]` is the index of the contact in the list, within [valid range](#indices).
+* `[index of contact]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the field of information to edit.
 * `[field value]` is the new value to replace the original value with.
-* `[index of entry]` for a multi-valued field is the index of the element in the list representing that field, within [valid range](#indices).
+* `[index of entry]` for a multi-valued field is the [index](#indices) of the element in the list representing that field.
 
 For **single-valued** fields, the `/index` prefix should not be used.
 
@@ -256,7 +254,7 @@ Format: `delete [index]`
 
 Parameters:
 
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
+* `[index]` is the [index](#indices) of the contact in the list.
 
 Example usage:
 
@@ -277,9 +275,9 @@ Format:
 
 Parameters:
 
-* `[index of contact]` is the index of the contact in the list, within [valid range](#indices).
+* `[index of contact]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the field of information to delete.
-* `[index of entry]` for a multi-valued field is the index of the element in the list representing that field, within [valid range](#indices).
+* `[index of entry]` for a multi-valued field is the [index](#indices) of the element in the list representing that field.
 
 For **single-valued** fields, the `/index` prefix should not be used.
 
@@ -477,8 +475,8 @@ Format: `open [index] /index [link index]`
 
 Parameters:
 
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
-* `[link index]` is the index of the link within the contact's link list, within [valid range](#indices).
+* `[index]` is the [index](#indices) of the contact in the list.
+* `[link index]` is the [index](#indices) of the link within the contact's link list.
 
 <div markdown="span" class="alert alert-secondary">
 :information_source: **Note:**
@@ -504,8 +502,8 @@ Format: `email [index] /index [email index]`
 
 Parameters:
 
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
-* `[email index]` is the index of the email address within the contact's email list, within [valid range](#indices).
+* `[index]` is the [index](#indices) of the contact in the list.
+* `[email index]` is the [index](#indices) of the email address within the contact's email list.
 
 <div markdown="span" class="alert alert-secondary">
 :information_source: **Note:**
