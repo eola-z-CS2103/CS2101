@@ -18,11 +18,11 @@ _NetworkBook_ is a **desktop contact book application** built for NUS Computing 
 
 Here's an overview of how _NetworkBook_ can help you manage your network of contacts better than existing alternatives:
 
-* Search for and sort contacts by multiple networking-relevant fields (e.g. priority, courses taken/taking, specialization(s) taken/intending to take, graduation year)
-* Access this application offline, with a static online page that contains user manual and download link
-* Record only the information you find relevant on our application (e.g. you can assign one contact only their email and specialisation, and another contact nothing but their course)
+* **Search** for and **sort** contacts by multiple networking-relevant fields (e.g. priority, courses taken/taking, specialization(s) taken/intending to take, graduation year)
+* Access this application **offline**, with a static online page that contains user manual and download link
+* Record only the information you find **relevant** on our application (e.g. you can assign one contact only their email and specialisation, and another contact nothing but their course)
 
-On top of these advantages, we believe that contact management must be efficient. Therefore, _NetworkBook_ is optimised for use via fully text based commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
+On top of these advantages, we believe that contact management must be **efficient**. Therefore, _NetworkBook_ is optimised for use via fully text based commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
 
 ## Table of Contents
 
@@ -60,29 +60,29 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
 
 ## Getting Started
 
-1. Make sure you have _Java 11_ installed on your computer.
+1. Make sure you have **Java 11** installed on your computer.
     * You can check that it is installed by running the command `java --version` in the command prompt/terminal.
-1. Download the latest version of _NetworkBook_ (`networkbook.jar`) from the top of the [_NetworkBook_ GitHub releases page](https://github.com/AY2324S1-CS2103T-T08-2/tp/releases).
-1. Create a new folder on your computer (e.g. on your computer desktop). You can name this folder however you want.
-1. Move the `networkbook.jar` file into the folder you just created.
+1. **Download** the latest version of _NetworkBook_ (`networkbook.jar`) from the top of the [_NetworkBook_ GitHub releases page](https://github.com/AY2324S1-CS2103T-T08-2/tp/releases).
+1. Create a **new folder** on your computer (e.g. on your computer desktop). You can name this folder however you want.
+1. **Move** the `networkbook.jar` file into the folder you just created.
 1. Open _NetworkBook_:
-    * If you are using Windows:
+    * If you are using **Windows**:
         1. Double-click the `networkbook.jar` file to open it.
-    * If you are using MacOS:
+    * If you are using **MacOS**:
         1. Open Terminal.app.
         1. Navigate to the folder you have created using the `cd` command:
             1. Type `cd`, then space, into the Terminal window.
             1. Drag the folder icon from Finder into the Terminal window.
             1. Press enter.
         1. Type in `java -jar networkbook.jar`, then press enter to open the app.
-    * If you are using Linux:
+    * If you are using **Linux**:
         1. Open your terminal emulator app.
         1. Navigate to the folder you have created using `cd`.
         1. Type in `java -jar networkbook.jar`, then press enter to open the app.
 1. You should now see the _NetworkBook_ window on your screen. This is what _NetworkBook_ looks like:
     ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
 1. You can now start using _NetworkBook_!
-    * Learn more about the commands in the [features](#features) section.
+    * **Learn more** about the commands in the [features](#features) section.
 
 ## Features
 
@@ -157,7 +157,10 @@ You can use the `create` command to create a new contact. When creating a contac
 To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 </div>
 
-When creating a contact, if there is already another contact with the same name, you would be informed that another contact with the same name already exists (not case sensitive).
+<div markdown="span" class="alert alert-warning">
+:bulb: When creating a contact, if there is already another contact with the same name, you would be informed that another contact with the same name already exists (not case sensitive).
+
+</div>
 
 **Example usage:**
 
@@ -189,7 +192,7 @@ You can add multiple fields with one `add` command by entering multiple sets of 
 
 :information_source: Fields you can add contact details to for an existing contact comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`.
 
-To view a comprehensive list of multi-valued fields and their prefixes, go to the start of the [Features section](#features).
+To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 
 </div>
 
@@ -566,7 +569,7 @@ It is optional to provide the email index. If not specified, it will **default t
 
 ### <u>Category 3 - Miscellaneous commands</u>
 
-This category covers miscellaneous commands for additional functionalities in _NetworkBook_. Relevant commands and explanations of their functionalities are outlined below:
+This category covers miscellaneous commands for **additional functionalities** in _NetworkBook_. Relevant commands and explanations of their functionalities are outlined below:
 
 #### Undo last change to _NetworkBook_: `undo`
 
