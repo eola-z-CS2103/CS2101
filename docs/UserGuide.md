@@ -40,7 +40,7 @@ This user guide provides in-depth documentation on the various commands that are
 3. [Miscellaneous commands](#category-3---miscellaneous-commands)
 4. [Accessibility features](#category-4---accessibility-features)
 
-If you are a new user, this user guide provides a [getting started guide](#getting-started) to aid you with installing the application and the initial setup. You can check the [FAQ](#FAQ) section if you face any difficulty.
+If you are a new user, this user guide provides a [getting started guide](#getting-started) to aid you with installing the application and the initial setup. You can check the [FAQ](#faq) section if you face any difficulty.
 
 If you are familiar with the software, this user guide gives an overview on how to use specific commands. You can use the [table of contents](#table-of-contents) to navigate to a specific command, or refer to the [command summary](#command-summary) as a help sheet.
 
@@ -51,8 +51,8 @@ NetworkBook 1.3 includes several new features and improvements for ease of use.
 * [Additional view commands](#sort-contacts-list-sort-by-field-name-order-ascdesc) (e.g. `sort` and `filter`) have been introduced to let you have more control over managing displayed contacts.
 * [Edit](#edit-contact-detail-edit-index-field-options) command has been introduced to allow you to edit contacts' details.
 * [Open links and emails](#open-a-contacts-link-open-index-index-link-index) via our newly-introduced commands that involve NetworkBook connecting to other apps.
-* [Undo/redo](#undo-last-change-to-NetworkBook-undo) commands have been added to help you revert mistaken/temporary command calls.
-* [New accessibility features](#Category-4---Accessibility-features) have been introduced for you to easily access common commands.
+* [Undo/redo](#undo-last-change-to-networkbook-undo) commands have been added to help you revert mistaken/temporary command calls.
+* [New accessibility features](#category-4---accessibility-features) have been introduced for you to easily access common commands.
 * User interface has now been refined to be more clean and usable.
 * Error messages are now more specific to give more helpful information.
 
