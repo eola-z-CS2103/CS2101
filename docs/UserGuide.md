@@ -162,7 +162,11 @@ When creating a contact, if there is already another contact with the same name,
 Example usage:
 
 * `create /name Jiale /phone 12345678 /grad AY2526-S2`
-    ![create command](images/create/create.png)
+
+&nbsp;
+![create command](images/create/create.png)
+&nbsp;
+
 * `create /name Jiale`
 
 [Table of Contents](#table-of-contents)
@@ -196,7 +200,11 @@ For example, if your contact at index `1` already has the phone number `12345678
 Example usage:
 
 * `add 1 /phone 91234567`
-    ![add phone](images/add-remark/add-phone.png)
+
+&nbsp;
+![add phone](images/add-remark/add-phone.png)
+&nbsp;
+
 * `add 2 /grad AY2223-S1`
 * `add 3 /link https://nknguyenhc.github.io /email nknguyentdn@gmail.com `
 * `add 1 /priority high /tag data analyst /course CS1101S /spec Robotics & AI`  
@@ -238,7 +246,11 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 Example usage:
 
 * `edit 3 /priority low`
-    ![update success](images/edit/edit.png)
+
+&nbsp;
+![update success](images/edit/edit.png)
+&nbsp;
+
 * `edit 2 /phone 10938472 /index 1`
 * `edit 3 /email nkn@gmail.com`
 
@@ -259,7 +271,11 @@ Parameters:
 Example usage:
 
 * `delete 6`
-    ![delete](images/delete/delete.png)
+
+&nbsp;
+![delete](images/delete/delete.png)
+&nbsp;
+
 * `delete 1`
 
 [Table of Contents](#table-of-contents)
@@ -298,7 +314,11 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 Example usage:
 
 * `delete 1 /phone /index 2`
-    ![delete phone](images/delete/delete-phone.png)
+
+&nbsp;
+![delete phone](images/delete/delete-phone.png)
+&nbsp;
+
 * `delete 5 /link /index 2`
 * `delete 10 /priority`
 
@@ -366,7 +386,11 @@ Using the find command will update the filter status to `Filter by: name`. The f
 Example usage:
 
 * `find Dav`
-    ![search](images/find/find.png)
+
+&nbsp;
+![search](images/find/find.png)
+&nbsp;
+
 * `find Kai Jie`
 
 [Table of Contents](#table-of-contents)
@@ -408,7 +432,11 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 Example usage:
 
 * `sort /by grad /order desc`
-    ![sort](images/sort/sort.png)
+
+&nbsp;
+![sort](images/sort/sort.png)
+&nbsp;
+
 * `sort /by name /order ascending`
 * `sort /by name`
 
@@ -457,7 +485,11 @@ your system. It does not factor in other fields like graduation year.
 Example usage:
 
 * `filter /by tag /with friend colleague`
-    ![filter](images/filter/filter.png)
+
+&nbsp;
+![filter](images/filter/filter.png)
+&nbsp;
+
 * `filter /by course /with computer /taken true`
 * `filter /by course /with robotics`
 * `filter /by spec /with Industry AI`
@@ -488,8 +520,12 @@ It is optional to provide the link index. If not specified, it will **default to
 Example usage:
 
 * `open 2 /index 2`
+
+&nbsp;
   ![open link success](images/open/open-link.png)
   **Note:** The web browser used will be your computer's default web browser.
+&nbsp;
+
 * `open 1`
 
 [Table of Contents](#table-of-contents)
@@ -514,8 +550,12 @@ It is optional to provide the email index. If not specified, it will **default t
 Example usage:
 
 * `email 1`
+
+&nbsp;
   ![open email success](images/open/open-email.png)
   **Note:** The email app used will be your computer's default email app.
+&nbsp;
+
 * `email 1 /index 2`
 
 [Table of Contents](#table-of-contents)
@@ -567,6 +607,8 @@ Parameters: N/A
 Example usage:
 
 * `help`
+
+&nbsp;
   ![screenshot of help window](images/help.png)
 
 [Table of Contents](#table-of-contents)
