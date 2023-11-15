@@ -157,7 +157,10 @@ You can use the `create` command to create a new contact. When creating a contac
 To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 </div>
 
-When creating a contact, if there is already another contact with the same name, you would be informed that another contact with the same name already exists (not case sensitive).
+<div markdown="span" class="alert alert-warning">
+:bulb: When creating a contact, if there is already another contact with the same name, you would be informed that another contact with the same name already exists (not case sensitive).
+
+</div>
 
 **Example usage:**
 
