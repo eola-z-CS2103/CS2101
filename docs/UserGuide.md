@@ -179,6 +179,8 @@ You can use the `add` command to add contact details under fields associated wit
 * `[field prefix]` specifies the corresponding field to add.
 * `[field value]` is the value to add to the field specified by the preceding prefix.
 
+You can add multiple fields with one `add` command by entering multiple sets of `[field prefix]` and `[field value]`.
+
 <div markdown="block" class="alert alert-info">
 
 :information_source: Fields you can add contact details to for an existing contact comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`.
