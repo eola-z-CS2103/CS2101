@@ -178,6 +178,8 @@ Parameters:
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the corresponding field to add.
 * `[field value]` is the value to add to the field specified by the preceding prefix.
+ 
+You can add multiple fields with a single add command, by typing multiple sets of `[field prefix]` and `[field value]`. 
 
 <div markdown="block" class="alert alert-info">
 
