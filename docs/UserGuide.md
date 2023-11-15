@@ -14,15 +14,15 @@ tr:nth-child(odd) {
 
 **Land the dream internship or job opportunity you've always wanted by networking more effectively using _NetworkBook!_**
 
-NetworkBook is a desktop contact book application built for NUS Computing students and professionals to manage information about the people they network with more efficiently than ever before.
+_NetworkBook_ is a desktop contact book application built for NUS Computing students and professionals to manage information about the people they network with more efficiently than ever before.
 
-Here's an overview of how NetworkBook can help you manage your network of contacts better than existing alternatives:
+Here's an overview of how _NetworkBook_ can help you manage your network of contacts better than existing alternatives:
 
 * Search for and sort contacts by multiple networking-relevant fields (e.g. priority, courses taken/taking, specialization(s) taken/intending to take, graduation year)
 * Access this application offline, with a static online page that contains user manual and download link
 * Record only the information you find relevant on our application (e.g. you can assign one contact only their email and specialisation, and another contact nothing but their course)
 
-On top of these advantages, we believe that contact management must be efficient. Therefore, NetworkBook is optimised for use via fully textual commands while still having an interactive and user-friendly visual interface. For fast typers, NetworkBook can get your contact managing done faster than existing alternatives performing a similar role.
+On top of these advantages, we believe that contact management must be efficient. Therefore, _NetworkBook_ is optimised for use via fully textual commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ On top of these advantages, we believe that contact management must be efficient
 
 ## About This User Guide
 
-This user guide provides in-depth documentation on the various commands that are available in NetworkBook. These commands are grouped into 4 broad categories: 
+This user guide provides in-depth documentation on the various commands that are available in _NetworkBook_. These commands are grouped into 4 broad categories: 
 
 1. [Manage contact information](#category-1---manage-contact-information)
 2. [View contact details](#category-2---view-contact-details)
@@ -44,13 +44,13 @@ If you are a new user, this user guide provides a [getting started guide](#getti
 
 If you are familiar with the software, this user guide gives an overview on how to use specific commands. You can use the [table of contents](#table-of-contents) to navigate to a specific command, or refer to the [command summary](#command-summary) as a help sheet.
 
-### What's new in NetworkBook 1.3
+### What's new in _NetworkBook_ 1.3
 
-NetworkBook 1.3 includes several new features and improvements for ease of use.
+_NetworkBook_ 1.3 includes several new features and improvements for ease of use.
 
 * [Additional view commands](#sort-contacts-list-sort-by-field-name-order-ascdesc) (e.g. `sort` and `filter`) have been introduced to let you have more control over managing displayed contacts.
 * [Edit](#edit-contact-detail-edit-index-field-options) command has been introduced to allow you to edit contacts' details.
-* [Open links and emails](#open-a-contacts-link-open-index-index-link-index) via our newly-introduced commands that involve NetworkBook connecting to other apps.
+* [Open links and emails](#open-a-contacts-link-open-index-index-link-index) via our newly-introduced commands that involve _NetworkBook_ connecting to other apps.
 * [Undo/redo](#undo-last-change-to-networkbook-undo) commands have been added to help you revert mistaken/temporary command calls.
 * [New accessibility features](#category-4---accessibility-features) have been introduced for you to easily access common commands.
 * User interface has now been refined to be more clean and usable.
@@ -62,10 +62,10 @@ NetworkBook 1.3 includes several new features and improvements for ease of use.
 
 1. Make sure you have Java 11 installed on your computer.
     * You can check that it is installed by running the command `java --version` in the command prompt/terminal.
-1. Download the latest version of NetworkBook (`networkbook.jar`) from the top of the [NetworkBook GitHub releases page](https://github.com/AY2324S1-CS2103T-T08-2/tp/releases).
+1. Download the latest version of _NetworkBook_ (`networkbook.jar`) from the top of the [_NetworkBook_ GitHub releases page](https://github.com/AY2324S1-CS2103T-T08-2/tp/releases).
 1. Create a new folder on your computer (e.g. on your computer desktop). You can name this folder however you want.
 1. Move the `networkbook.jar` file into the folder you just created.
-1. Open NetworkBook:
+1. Open _NetworkBook_:
     * If you are using Windows:
         1. Double-click the `networkbook.jar` file to open it.
     * If you are using MacOS:
@@ -79,9 +79,9 @@ NetworkBook 1.3 includes several new features and improvements for ease of use.
         1. Open your terminal emulator app.
         1. Navigate to the folder you have created using `cd`.
         1. Type in `java -jar networkbook.jar`, then press enter to open the app.
-1. You should now see the NetworkBook window on your screen. This is what NetworkBook looks like:
-    ![Annotated diagram of the NetworkBook window](./images/gui-annotated.png)
-1. You can now start using NetworkBook!
+1. You should now see the _NetworkBook_ window on your screen. This is what _NetworkBook_ looks like:
+    ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
+1. You can now start using _NetworkBook_!
     * Learn more about the commands in the [features](#features) section.
 
 ## Features
@@ -92,7 +92,7 @@ NetworkBook 1.3 includes several new features and improvements for ease of use.
 
 :information_source: **Fields of a contact**
 
-In NetworkBook, details of a contact are categorised into different **fields**. Each field has a corresponding **prefix** in the command format. 
+In _NetworkBook_, details of a contact are categorised into different **fields**. Each field has a corresponding **prefix** in the command format. 
 
 Some fields are **single-valued fields**, meaning that each contact has **only 1 value** for each of these fields.
 
@@ -113,7 +113,7 @@ Other fields are **multi-valued fields**. Each contact has a **list** of differe
 | specialisations     | /spec   | Any non-empty value                                          |-|
 | tags                | /tag    | Any non-empty value                                          |-|
 
-In NetworkBook, you can manage contact information by changing the fields assigned to them. Following are the commands you can use to manage fields of a contact:
+In _NetworkBook_, you can manage contact information by changing the fields assigned to them. Following are the commands you can use to manage fields of a contact:
 
 | Command                                                          | How does it manage the fields                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------|
@@ -127,9 +127,9 @@ In NetworkBook, you can manage contact information by changing the fields assign
 <div markdown="block" class="alert alert-secondary">
 <span id="indices">:information_source: **Indices**</span>
 
-In NetworkBook, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
+In _NetworkBook_, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
 
-Make sure to provide indices that has a corresponding item in your NetworkBook. If your command contains an invalid index, an error message will be shown.
+Make sure to provide indices that has a corresponding item in your _NetworkBook_. If your command contains an invalid index, an error message will be shown.
 
 </div>
 
@@ -205,7 +205,7 @@ Example usage:
 
 #### Edit contact detail: `edit [index] [field] [options]`
 
-You can use the `edit` command to edit contact details of existing contacts in your NetworkBook so that you can update outdated/invalid information in your NetworkBook.
+You can use the `edit` command to edit contact details of existing contacts in your _NetworkBook_ so that you can update outdated/invalid information in your _NetworkBook_.
 
 Format:
 
@@ -248,7 +248,7 @@ Example usage:
 
 #### Delete a contact: `delete [index]`
 
-You can remove a contact from your NetworkBook using the `delete` command, so that your NetworkBook only contains contact details of those relevant.
+You can remove a contact from your _NetworkBook_ using the `delete` command, so that your _NetworkBook_ only contains contact details of those relevant.
 
 Format: `delete [index]`
 
@@ -308,7 +308,7 @@ Example usage:
 
 #### Delete all contacts: `clear`
 
-You can remove all contacts from your NetworkBook using the `clear` command, so that you can repopulate NetworkBook with a new set of contact details more efficiently.
+You can remove all contacts from your _NetworkBook_ using the `clear` command, so that you can repopulate _NetworkBook_ with a new set of contact details more efficiently.
 
 <div markdown="span" class="alert alert-warning">:warning: **Warning:**
 This command deletes **all** of your contacts. Only do this if you are sure.
@@ -379,7 +379,7 @@ You can use the `sort` command to sort your list of contacts so that you can eff
 If the list is currently filtered in a certain manner (using [`find`](#find-a-contact-find-name) or [`filter`](#filter-contacts-list-filter-by-field-with-term)), the updated list will also be filtered in the same manner.
 
 <div markdown="span" class="alert alert-secondary">:information_source: **Note:**
-When you first open NetworkBook, the list starts off sorted by **name** in **ascending** order.
+When you first open _NetworkBook_, the list starts off sorted by **name** in **ascending** order.
 </div>
 
 Format: `sort /by [field] /order [order]`
@@ -524,11 +524,11 @@ Example usage:
 
 ### <u>Category 3 - Miscellaneous commands</u>
 
-This category covers miscellaneous commands for additional functionalities in NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
+This category covers miscellaneous commands for additional functionalities in _NetworkBook_. Relevant commands and explanations of their functionalities are outlined below:
 
-#### Undo last change to NetworkBook: `undo`
+#### Undo last change to _NetworkBook_: `undo`
 
-You can use the `undo` command to undo the last change to the list of contacts stored in NetworkBook and/or the list of contacts displayed by NetworkBook, so that you can quickly revert mistaken/temporary NetworkBook commands (excluding `undo`). This command can only undo changes made in your current session on NetworkBook.
+You can use the `undo` command to undo the last change to the list of contacts stored in _NetworkBook_ and/or the list of contacts displayed by _NetworkBook_, so that you can quickly revert mistaken/temporary _NetworkBook_ commands (excluding `undo`). This command can only undo changes made in your current session on _NetworkBook_.
 
 Format: `undo`
 
@@ -542,7 +542,7 @@ Example usage:
 
 #### Redo last undone change: `redo`
 
-You can use the `redo` command to redo the last change to the list of contacts stored in NetworkBook and/or the list of contacts displayed by NetworkBook, so that you can quickly revert mistaken/temporary `undo` commands. This command only works if you have previously used `undo` commands in NetworkBook that can be reversed.
+You can use the `redo` command to redo the last change to the list of contacts stored in _NetworkBook_ and/or the list of contacts displayed by _NetworkBook_, so that you can quickly revert mistaken/temporary `undo` commands. This command only works if you have previously used `undo` commands in _NetworkBook_ that can be reversed.
 
 Format: `redo`
 
@@ -576,8 +576,8 @@ Example usage:
 You can use the `save` command to manually save your contacts to the data file.
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**
-**You do not need to manually save in most cases** -- NetworkBook automatically saves your data, as long as it has permission to write to the data file.
-You may need to manually save if NetworkBook's permission to write to the data file is compromised.
+**You do not need to manually save in most cases** -- _NetworkBook_ automatically saves your data, as long as it has permission to write to the data file.
+You may need to manually save if _NetworkBook_'s permission to write to the data file is compromised.
 </div>
 
 
@@ -589,9 +589,9 @@ Example usage:
 
 * `save`
 
-#### Exit NetworkBook: `exit`
+#### Exit _NetworkBook_: `exit`
 
-You can use the `exit` command to close the NetworkBook app.
+You can use the `exit` command to close the _NetworkBook_ app.
 
 Format: `exit`
 
@@ -634,7 +634,7 @@ When typing in the command box, you can use the arrow keys to fill the command b
 
 When not typing in the command box, you can use the following shortcuts to quickly execute an `undo` or `redo` command.
 
-* `ctrl-Z`: undo last change to NetworkBook (equivalent to [`undo` command](#undo-last-change-to-networkbook-undo))
+* `ctrl-Z`: undo last change to _NetworkBook_ (equivalent to [`undo` command](#undo-last-change-to-networkbook-undo))
 * `ctrl-Y`: redo last change undone (equivalent to [`redo` command](#redo-last-undone-change-redo))
 
 Note that this only works when the command box is not active. If you are typing in the command box, these shortcuts will be used to undo or redo changes made to the command text.
@@ -644,7 +644,7 @@ Note that this only works when the command box is not active. If you are typing 
 #### Other useful shortcuts: `ctrl-S/W`, `F1`
 
 * `ctrl-S`: manually save to data file (equivalent to [`save` command](#manually-save-to-data-file-save))
-* `ctrl-W`: exit NetworkBook (equivalent to [`exit` command](#exit-networkbook-exit))
+* `ctrl-W`: exit _NetworkBook_ (equivalent to [`exit` command](#exit-networkbook-exit))
 * `F1`: view help window (equivalent to [`help` command](#view-help-window-help))
 
 <div markdown="span" class="alert alert-secondary">
@@ -655,7 +655,7 @@ If the `F1` key is bound to a different function in your computer settings, the 
 
 <!-- @@author xenosf -->
 
-While NetworkBook is optimised for use with keyboards and text commands, it also has buttons you can click to execute certain commands.
+While _NetworkBook_ is optimised for use with keyboards and text commands, it also has buttons you can click to execute certain commands.
 
 #### Filter (equivalent to [`filter` command](#filter-contacts-list-filter-by-field-with-term))
 
@@ -675,23 +675,23 @@ You can click on a contact's email address to email them.
 
 | Command                                                      | Prefixes                                                     | Format and examples                                          | What it does                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [**create**](#create-new-contact-create-name-name-optional-fields) | `/name` <br/>`[/phone]` <br/>`[/email] `<br/>`[/link]` <br/>`[/course]` <br/>`[/spec]` <br/>`[/grad]` <br/>`[/priority]` <br/>`[/tag]` | `create /name [name] [optional fields]` <br/><br/> e.g., `create /name Oreki` <br/> `create /name Ness /phone +6598765432 /grad AY2526-S2` | Creates a new contact in NetworkBook. <br/><br/>If optional fields are provided, their values will be added to the contact. |
+| [**create**](#create-new-contact-create-name-name-optional-fields) | `/name` <br/>`[/phone]` <br/>`[/email] `<br/>`[/link]` <br/>`[/course]` <br/>`[/spec]` <br/>`[/grad]` <br/>`[/priority]` <br/>`[/tag]` | `create /name [name] [optional fields]` <br/><br/> e.g., `create /name Oreki` <br/> `create /name Ness /phone +6598765432 /grad AY2526-S2` | Creates a new contact in _NetworkBook_. <br/><br/>If optional fields are provided, their values will be added to the contact. |
 | [**add**](#add-details-to-contact-add-index-fields)          | `[/phone]` <br/>`[/email]` <br/>`[/link]` <br/>`[/course]` <br/>`[/spec]` <br/>`[/grad]` <br/>`[/priority]` <br/>`[/tag]` | `add [index] [field prefix] [field value] ...`  <br/><br/>e.g., `add 2 /email test@eg.com` <br/>`add 1 /link https://nknguyenhc.github.io/` <br/>`add 1 /priority high /grad AY2223-S1` | Adds information to a contact.                               |
 | [**edit**](#edit-contact-detail-edit-index-field-options)    | Single-valued fields: <br/>`[/name]` <br/>`[/grad]` <br/>`[/priority]`<br/><br/>Multi-valued fields: <br/>`[/phone]` <br/>`[/email]` `[/link]` <br/>`[/course]` <br/>`[/spec]` <br/>`[/tag]` | Single-valued fields: <br/>`edit [index of contact] [field prefix] [field value]` <br/><br/>e.g., `edit 1 /name Nguyen` <br/> `edit 1 /grad AY2627-S1` <br/><br/>Multi-valued fields: <br/>`edit [index of contact] [field prefix] [field value]` (default to index 1) <br/><br/>e.g., `edit 1 /email aaa@gmail.com` <br/>`edit 1 /course CS2109S /index 1` | Edits information about a contact.                           |
-| [**clear**](#delete-all-contacts-clear)                      | N/A                                                          | `clear`                                                      | Deletes all contacts from NetworkBook.                       |
-| [**delete**](#delete-a-contact-delete-index)                 | N/A                                                          | `delete [index]`<br/><br/> e.g., `delete 1`                  | Deletes a contact from NetworkBook.                          |
+| [**clear**](#delete-all-contacts-clear)                      | N/A                                                          | `clear`                                                      | Deletes all contacts from _NetworkBook_.                       |
+| [**delete**](#delete-a-contact-delete-index)                 | N/A                                                          | `delete [index]`<br/><br/> e.g., `delete 1`                  | Deletes a contact from _NetworkBook_.                          |
 | [**delete**](#delete-some-details-delete-index-field-prefix-options) | Single-valued fields: <br/>`[/grad]` <br/>`[/priority]`<br/><br/>Multi-valued fields: <br/>`[/phone]` <br/>` [/email]` <br/>`[/link]` <br/>`[/course]` <br/>`[/spec]` <br/>`[/tag]` | Single-valued fields: <br/>`delete [index of contact] [field prefix]`<br/><br/> e.g. `delete 1 /priority`<br/><br/>Multi-valued fields: <br/>`delete [index of contact] [field prefix]` (default to index 1) <br/>`delete [index of contact] [field prefix] /index [index of entry]` <br/><br/> e.g. `delete 2 /spec` <br/> `delete 3 /email /index 2` | Deletes some details of a contact.                           |
 | [**list**](#list-all-contacts-list)                          | N/A                                                          | `list`                                                       | Lists all saved contacts.                                    |
 | [**find**](#find-a-contact-find-name)                        | N/A                                                          | `find [name]` <br/><br/> e.g., `find Ness`                   | Searches for contacts by name.                               |
 | [**sort**](#sort-contacts-list-sort-by-field-name-order-ascdesc) | `/by` <br/> `[/order]`                                       | `sort /by [field] /order [order]`<br/><br/> e.g., `sort /by priority /order desc` | Sorts contacts by a field.                                   |
 | [**filter**](#filter-contacts-list-filter-by-field-with-term) | `/by` <br/> `/with` <br/> `[/taken]`                         | `filter /by [field] /with [term]` <br/><br/> e.g. `filter /by course /with abc` <br/> `filter /by tag /with banker` <br/><br/> For course: <br/> `filter /by course /with [term] [/taken true/false]` <br/> e.g. `filter /by course /with abg /taken false` | Filters contacts by a field.                                 |
-| [**undo**](#undo-last-change-to-networkbook-undo)            | N/A                                                          | `undo`                                                       | Undoes the last change to the NetworkBook's full list of contacts and/or list of displayed contacts. |
-| [**redo**](#redo-last-undone-change-redo)                    | N/A                                                          | `redo`                                                       | Redoes the last change to the NetworkBook's full list of contacts and/or list of displayed contacts. |
+| [**undo**](#undo-last-change-to-networkbook-undo)            | N/A                                                          | `undo`                                                       | Undoes the last change to the _NetworkBook_'s full list of contacts and/or list of displayed contacts. |
+| [**redo**](#redo-last-undone-change-redo)                    | N/A                                                          | `redo`                                                       | Redoes the last change to the _NetworkBook_'s full list of contacts and/or list of displayed contacts. |
 | [**open**](#open-a-contacts-link-open-index-index-link-index) | `[/index]`                                                   | `open [index]` (default to index 1) <br/>`open [index] /index [link index]` <br/> e.g., `open 1` <br/> e.g., `open 1 /index 2` | Opens a contact's link in the default browser.               |
 | [**email**](#send-email-to-a-contacts-email-address-email-index-index-email-index) | `[/index]`                                                   | `email [index]` (default to index 1) <br/>`email [index] /index [email index]` <br/> e.g., `email 1` <br/> e.g., `email 1 /index 2` | Opens default mailbox to compose a new email to a contact's email address. |
 | [**help**](#view-help-window-help)                           | N/A                                                          | `help`                                                       | Opens a window containing a link to this user guide.         |
 | [**save**](#manually-save-to-data-file-save)                 | N/A                                                          | `save`                                                       | Manually saves contacts to data file.                        |
-| [**exit**](#exit-networkbook-exit)                           | N/A                                                          | `exit`                                                       | Exits NetworkBook.                                           |
+| [**exit**](#exit-networkbook-exit)                           | N/A                                                          | `exit`                                                       | Exits _NetworkBook_.                                           |
 
 [Table of Contents](#table-of-contents)
 
@@ -699,15 +699,15 @@ You can click on a contact's email address to email them.
 
 ## FAQ
 
-### Launching NetworkBook
+### Launching _NetworkBook_
 
-**Q:** How can I launch NetworkBook if the clicking on the JAR file does not work on my Windows computer? <br/>
+**Q:** How can I launch _NetworkBook_ if the clicking on the JAR file does not work on my Windows computer? <br/>
 **A:** If you are familiar with the command prompt, you can follow the steps below:
 
 1. Open command prompt on your computer
 1. Navigate to the directory where the JAR file is located using `cd [JAR file location]`
 1. Type `java -jar networkbook.jar` and press enter
-1. NetworkBook should launch
+1. _NetworkBook_ should launch
 
 If you have any further issues, please raise an issue on our [GitHub page](https://github.com/AY2324S1-CS2103T-T08-2/tp). We will attend to you as soon as we can.
 
@@ -718,12 +718,12 @@ If you have any further issues, please raise an issue on our [GitHub page](https
 
 ### Loading data from another device
 
-**Q:** How can I load my contacts stored in NetworkBook used in another device? <br/>
-**A:** Locate the data file stored at `[JAR file location]/data/networkbook.json`. Copy over the data file to the corresponding location on your current device. After that, launch NetworkBook to check whether your contact details have been loaded properly.
+**Q:** How can I load my contacts stored in _NetworkBook_ used in another device? <br/>
+**A:** Locate the data file stored at `[JAR file location]/data/networkbook.json`. Copy over the data file to the corresponding location on your current device. After that, launch _NetworkBook_ to check whether your contact details have been loaded properly.
 
 ### Editing data file manually
 
-**Q:** Can I edit the data file for NetworkBook manually (i.e. from outside the NetworkBook app)? <br/>
-**A:** You can edit the data file for NetworkBook manually, but at your own risk (if there are errors in the file related to formatting/invalid data, the app will not read the data file and begin from an empty data file instead.)
+**Q:** Can I edit the data file for _NetworkBook_ manually (i.e. from outside the _NetworkBook_ app)? <br/>
+**A:** You can edit the data file for _NetworkBook_ manually, but at your own risk (if there are errors in the file related to formatting/invalid data, the app will not read the data file and begin from an empty data file instead.)
 
 [Table of Contents](#table-of-contents)
