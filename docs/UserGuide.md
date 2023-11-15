@@ -14,7 +14,7 @@ tr:nth-child(odd) {
 
 **Land the dream internship or job opportunity you've always wanted by networking more effectively using _NetworkBook!_**
 
-_NetworkBook_ is a desktop contact book application built for NUS Computing students and professionals to manage information about the people they network with more efficiently than ever before.
+_NetworkBook_ is a **desktop contact book application** built for NUS Computing students and professionals to manage information about the people they network with more efficiently than ever before.
 
 Here's an overview of how _NetworkBook_ can help you manage your network of contacts better than existing alternatives:
 
@@ -22,7 +22,7 @@ Here's an overview of how _NetworkBook_ can help you manage your network of cont
 * Access this application offline, with a static online page that contains user manual and download link
 * Record only the information you find relevant on our application (e.g. you can assign one contact only their email and specialisation, and another contact nothing but their course)
 
-On top of these advantages, we believe that contact management must be efficient. Therefore, _NetworkBook_ is optimised for use via fully textual commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
+On top of these advantages, we believe that contact management must be efficient. Therefore, _NetworkBook_ is optimised for use via fully text based commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
 
 ## Table of Contents
 
@@ -33,20 +33,20 @@ On top of these advantages, we believe that contact management must be efficient
 
 ## About This User Guide
 
-This user guide provides in-depth documentation on the various commands that are available in _NetworkBook_. These commands are grouped into 4 broad categories: 
+This user guide provides **in-depth documentation** on the various commands that are available in _NetworkBook_. These commands are grouped into **4** broad categories: 
 
 1. [Manage contact information](#category-1---manage-contact-information)
 2. [View contact details](#category-2---view-contact-details)
 3. [Miscellaneous commands](#category-3---miscellaneous-commands)
 4. [Accessibility features](#category-4---accessibility-features)
 
-If you are a new user, this user guide provides a [getting started guide](#getting-started) to aid you with installing the application and the initial setup. You can check the [FAQ](#faq) section if you face any difficulty.
+If you are a **new user**, this user guide provides a [getting started guide](#getting-started) to aid you with installing the application and the initial setup. You can check the [FAQ](#faq) section if you face any difficulty.
 
-If you are familiar with the software, this user guide gives an overview on how to use specific commands. You can use the [table of contents](#table-of-contents) to navigate to a specific command, or refer to the [command summary](#command-summary) as a help sheet.
+For **more experienced users**, this user guide gives an overview on how to use specific commands. You can use the [table of contents](#table-of-contents) to navigate to a specific command, or refer to the [command summary](#command-summary) as a help sheet.
 
 ### What's new in _NetworkBook_ 1.3
 
-_NetworkBook_ 1.3 includes several new features and improvements for ease of use.
+_NetworkBook_ 1.3 includes several new **features and improvements** for ease of use.
 
 * [Additional view commands](#sort-contacts-list-sort-by-field-name-order-ascdesc) (e.g. `sort` and `filter`) have been introduced to let you have more control over managing displayed contacts.
 * [Edit](#edit-contact-detail-edit-index-field-options) command has been introduced to allow you to edit contacts' details.
@@ -60,7 +60,7 @@ _NetworkBook_ 1.3 includes several new features and improvements for ease of use
 
 ## Getting Started
 
-1. Make sure you have Java 11 installed on your computer.
+1. Make sure you have _Java 11_ installed on your computer.
     * You can check that it is installed by running the command `java --version` in the command prompt/terminal.
 1. Download the latest version of _NetworkBook_ (`networkbook.jar`) from the top of the [_NetworkBook_ GitHub releases page](https://github.com/AY2324S1-CS2103T-T08-2/tp/releases).
 1. Create a new folder on your computer (e.g. on your computer desktop). You can name this folder however you want.
@@ -141,7 +141,7 @@ This category focuses on storing and modifying a contact list. It involves speci
 
 #### Create new contact: `create /name [name] [optional fields]`
 
-You can use the `create` command to create a new contact. When creating a contact, you must provide the name field, and it's optional to provide other fields which will be added to the new contact.
+You can use the `create` command to create a new contact. When creating a contact, you must provide the name field, and it is optional to provide other fields which will be added to the new contact.
 
 Format: `create /name [name] [optional field prefix] [optional field value] ...`
 
