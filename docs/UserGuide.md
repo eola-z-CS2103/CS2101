@@ -24,8 +24,6 @@ Here's an overview of how NetworkBook can help you manage your network of contac
 
 On top of these advantages, we believe that contact management must be efficient. Therefore, NetworkBook is optimised for use via fully textual commands while still having an interactive and user-friendly visual interface. For fast typers, NetworkBook can get your contact managing done faster than existing alternatives performing a similar role.
 
-If you are new here, visit our [getting started guide](#getting-started) to start getting connected on NetworkBook!
-
 ## Table of Contents
 
 * TOC
@@ -55,7 +53,7 @@ NetworkBook 1.3 includes several new features and improvements for ease of use.
 * [Open links and emails](#open-a-contacts-link-open-index-index-link-index) via our newly-introduced commands that involve NetworkBook connecting to other apps.
 * [Undo/redo](#undo-last-change-to-NetworkBook-undo) commands have been added to help you revert mistaken/temporary command calls.
 * [New accessibility features](#Category-4---Accessibility-features) have been introduced for you to easily access common commands.
-* User interfacehas now been refined to be more clean and usable.
+* User interface has now been refined to be more clean and usable.
 * Error messages are now more specific to give more helpful information.
 
 <!-- @@author xenosf -->
