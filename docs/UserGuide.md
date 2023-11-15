@@ -8,7 +8,6 @@ tr:nth-child(odd) {
   background-color: #ffffff;
 }
 </style>
-
 <!-- @@author awhb -->
 
 ## Product Overview
@@ -133,9 +132,9 @@ Make sure to provide indices that has a corresponding item in your NetworkBook. 
 
 <!-- @@author awhb -->
 
-### <u>Category 1 - Add contact information</u>
+### <u>Category 1 - Manage contact information</u>
 
-This category involves the addition of contact information using specific commands. Relevant commands and explanations of their functionalities are outlined below:
+This category focuses on storing and modifying a contact list. It involves specific commands that allow you to **add, edit** and **delete** contact information. Relevant commands and explanations of their functionalities are outlined below:
 
 #### Create new contact: `create /name [name] [optional fields]`
 
@@ -202,10 +201,6 @@ Example usage:
 
 [Table of Contents](#table-of-contents)
 
-### <u>Category 2 - Edit contact details</u>
-
-This category focuses on modifying contact information and managing entries in your NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
-
 #### Edit contact detail: `edit [index] [field] [options]`
 
 You can use the `edit` command to edit contact details of existing contacts in your NetworkBook so that you can update outdated/invalid information in your NetworkBook.
@@ -246,6 +241,8 @@ Example usage:
 * `edit 3 /email nkn@gmail.com`
 
 [Table of Contents](#table-of-contents)
+
+<!-- @@author Singa-Pirate -->
 
 #### Delete a contact: `delete [index]`
 
@@ -329,9 +326,9 @@ Example usage:
 
 [Table of Contents](#table-of-contents)
 
-### <u>Category 3 - Find/view contacts</u>
+### <u>Category 2 - View contact details</u>
 
-This category is centered around managing contacts displayed in your NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
+This category is centered around displaying and using contact details you previously stored. It contains commands that allow you to **retrieve** and **use** information efficiently. Relevant commands and explanations of their functionalities are outlined below:
 
 #### List all contacts: `list`
 
@@ -466,11 +463,66 @@ Example usage:
 
 [Table of Contents](#table-of-contents)
 
+<!-- @@author nknguyenhc -->
+
+#### Open a contact's link: `open [index] /index [link index]`
+
+You can use the `open` command to open a contact's link so that you can conveniently access their social links when needed. This opens the webpage in your default web browser.
+
+Format: `open [index] /index [link index]`
+
+Parameters:
+
+* `[index]` is the index of the contact in the list, within [valid range](#indices).
+* `[link index]` is the index of the link within the contact's link list, within [valid range](#indices).
+
+<div markdown="span" class="alert alert-secondary">
+:information_source: **Note:**
+It is optional to provide the link index. If not specified, it will **default to 1**.
+
+
+</div>
+
+Example usage:
+
+* `open 2 /index 2`
+  ![open link success](images/open/open-link.png)
+  **Note:** The web browser used will be your computer's default web browser.
+* `open 1`
+
+[Table of Contents](#table-of-contents)
+
+#### Send email to a contact's email address: `email [index] /index [email index]`
+
+You can use the `email` command to open the default mailbox application to compose an email to the contact's email at `email index`, so that you can send emails to your contacts more efficiently.
+
+Format: `email [index] /index [email index]`
+
+Parameters:
+
+* `[index]` is the index of the contact in the list, within [valid range](#indices).
+* `[email index]` is the index of the email address within the contact's email list, within [valid range](#indices).
+
+<div markdown="span" class="alert alert-secondary">
+:information_source: **Note:**
+It is optional to provide the email index. If not specified, it will **default to 1**.
+</div>
+
+
+Example usage:
+
+* `email 1`
+  ![open email success](images/open/open-email.png)
+  **Note:** The email app used will be your computer's default email app.
+* `email 1 /index 2`
+
+[Table of Contents](#table-of-contents)
+
 <!-- @@author awhb -->
 
-### <u>Category 4 - Undo/redo</u>
+### <u>Category 3 - Miscellaneous commands</u>
 
-This category focuses on managing the history of changes made to displayed and/or stored contacts in your NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
+This category covers miscellaneous commands for additional functionalities in NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
 
 #### Undo last change to NetworkBook: `undo`
 
@@ -500,68 +552,60 @@ Example usage:
 
 [Table of Contents](#table-of-contents)
 
-<!-- @@author nknguyenhc -->
+<!-- @@author xenosf -->
 
-### <u>Category 5 - Open other apps</u>
+#### View help window: `help`
 
-This category focuses on the opening of external applications or services associated with contact details. Relevant commands and explanations of their functionalities are outlined below:
+You can use the `help` command to open a help window containing a link to this user guide. You can press the "Copy URL" button to copy the link, and paste it into your web browser to view this user guide web page.
 
-#### Open a contact's link: `open [index] /index [link index]`
+Format: `help`
 
-You can use the `open` command to open a contact's link so that you can conveniently access their social links when needed. This opens the webpage in your default web browser.
-
-Format: `open [index] /index [link index]`
-
-Parameters:
-
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
-* `[link index]` is the index of the link within the contact's link list, within [valid range](#indices).
-
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
-It is optional to provide the link index. If not specified, it will **default to 1**.
-
-</div>
+Parameters: N/A
 
 Example usage:
 
-* `open 2 /index 2`
-    ![open link success](images/open/open-link.png)
-    **Note:** The web browser used will be your computer's default web browser.
-* `open 1`
+* `help`
+  ![screenshot of help window](images/help.png)
 
 [Table of Contents](#table-of-contents)
 
-#### Send email to a contact's email address: `email [index] /index [email index]`
+#### Manually save to data file: `save`
 
-You can use the `email` command to open the default mailbox application to compose an email to the contact's email at `email index`, so that you can send emails to your contacts more efficiently.
+You can use the `save` command to manually save your contacts to the data file.
 
-Format: `email [index] /index [email index]`
-
-Parameters:
-
-* `[index]` is the index of the contact in the list, within [valid range](#indices).
-* `[email index]` is the index of the email address within the contact's email list, within [valid range](#indices).
-
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
-It is optional to provide the email index. If not specified, it will **default to 1**.
+<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
+**You do not need to manually save in most cases** -- NetworkBook automatically saves your data, as long as it has permission to write to the data file.
+You may need to manually save if NetworkBook's permission to write to the data file is compromised.
 </div>
+
+
+Format: `save`
+
+Parameters: N/A
 
 Example usage:
 
-* `email 1`
-    ![open email success](images/open/open-email.png)
-    **Note:** The email app used will be your computer's default email app.
-* `email 1 /index 2`
+* `save`
+
+#### Exit NetworkBook: `exit`
+
+You can use the `exit` command to close the NetworkBook app.
+
+Format: `exit`
+
+Parameters: N/A
+
+Example usage:
+
+* `exit`
 
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Singa-Pirate -->
 
-### <u>Category 6 - Keyboard shortcuts</u>
+### <u>Category 4 - Accessibility features</u>
 
-This category introduces keyboard shortcuts to enhance efficiency when interacting with NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
+This category introduces available interactions using **keyboard** and **mouse** that add more scaffolding to your networking experience. Relevant commands and explanations of their functionalities are outlined below:
 
 #### Auto-fill command preamble: `ctrl-F/N/G/U/R`
 
@@ -605,14 +649,11 @@ Note that this only works when the command box is not active. If you are typing 
 :information_source: **Note:**
 If the `F1` key is bound to a different function in your computer settings, the keyboard shortcut to view help window may not work as expected.
 </div>
-
 [Table of Contents](#table-of-contents)
 
 <!-- @@author xenosf -->
 
-### <u>Category 7 - Mouse interaction</u>
-
-While NetworkBook is optimised for use with keyboards and text commands, it also has buttons you can click to execute certain commands. Relevant commands and explanations of their functionalities are outlined below:
+While NetworkBook is optimised for use with keyboards and text commands, it also has buttons you can click to execute certain commands.
 
 #### Filter (equivalent to [`filter` command](#filter-contacts-list-filter-by-field-with-term))
 
@@ -625,56 +666,6 @@ You can click on a contact's link to open the link in your web browser.
 #### Email contact (equivalent to [`email` command](#send-email-to-a-contacts-email-address-email-index-index-email-index))
 
 You can click on a contact's email address to email them.
-
-[Table of Contents](#table-of-contents)
-
-### <u>Category 8 - Miscellaneous</u>
-
-This category covers miscellaneous commands for additional functionalities in NetworkBook. Relevant commands and explanations of their functionalities are outlined below:
-
-#### View help window: `help`
-
-You can use the `help` command to open a help window containing a link to this user guide. You can press the "Copy URL" button to copy the link, and paste it into your web browser to view this user guide web page.
-
-Format: `help`
-
-Parameters: N/A
-
-Example usage:
-
-* `help`
-    ![screenshot of help window](images/help.png)
-
-[Table of Contents](#table-of-contents)
-
-#### Manually save to data file: `save`
-
-You can use the `save` command to manually save your contacts to the data file.
-
-<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
-**You do not need to manually save in most cases** -- NetworkBook automatically saves your data, as long as it has permission to write to the data file.
-You may need to manually save if NetworkBook's permission to write to the data file is compromised.
-</div>
-
-Format: `save`
-
-Parameters: N/A
-
-Example usage:
-
-* `save`
-
-#### Exit NetworkBook: `exit`
-
-You can use the `exit` command to close the NetworkBook app.
-
-Format: `exit`
-
-Parameters: N/A
-
-Example usage:
-
-* `exit`
 
 [Table of Contents](#table-of-contents)
 
