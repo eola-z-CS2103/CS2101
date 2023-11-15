@@ -143,23 +143,23 @@ This category focuses on storing and modifying a contact list. It involves speci
 
 You can use the `create` command to create a new contact. When creating a contact, you must provide the name field, and it is optional to provide other fields which will be added to the new contact.
 
-Format: `create /name [name] [optional field prefix] [optional field value] ...`
+**Format:** `create /name [name] [optional field prefix] [optional field value] ...`
 
-Parameters:
+**Parameters:**
 
 * `[name]`  is the name of the contact you wish to add.
-* `[optional fields]` are non-mandatory fields you can associate with the contact at the point of creation.
+* `[optional fields]` are **non-mandatory fields** you can associate with the contact at the point of creation.
 
 <div markdown="block" class="alert alert-info">
 
-:information_source: Non-mandatory fields you can associate with a contact at the point of creation comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`. (These fields can also be subsequently added to the contact using the `add` command.)
+:information_source: **Non-mandatory fields** you can associate with a contact at the point of creation comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`. (These fields can also be subsequently added to the contact using the `add` command.)
 
 To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 </div>
 
 When creating a contact, if there is already another contact with the same name, you would be informed that another contact with the same name already exists (not case sensitive).
 
-Example usage:
+**Example usage:**
 
 * `create /name Jiale /phone 12345678 /grad AY2526-S2`
     ![create command](images/create/create.png)
@@ -171,9 +171,9 @@ Example usage:
 
 You can use the `add` command to add contact details under fields associated with an existing contact. No new contact will be created. 
 
-Format: `add [index] [field prefix] [field value] ...`
+**Format:** `add [index] [field prefix] [field value] ...`
 
-Parameters:
+**Parameters:**
 
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the corresponding field to add.
@@ -193,7 +193,7 @@ For example, if your contact at index `1` already has the phone number `12345678
 
 </div>
 
-Example usage:
+**Example usage:**
 
 * `add 1 /phone 91234567`
     ![add phone](images/add-remark/add-phone.png)
@@ -207,12 +207,12 @@ Example usage:
 
 You can use the `edit` command to edit contact details of existing contacts in your _NetworkBook_ so that you can update outdated/invalid information in your _NetworkBook_.
 
-Format:
+**Format:**
 
 * Edit **single-valued** field: `edit [index of contact] [field prefix] [field value]`
 * Edit an entry of a **multi-valued** field: `edit [index of contact] [field prefix] [field value] /index [index of entry]`
 
-Parameters:
+**Parameters:**
 
 * `[index of contact]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the field of information to edit.
@@ -235,7 +235,7 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 </div>
 
-Example usage:
+**Example usage:**
 
 * `edit 3 /priority low`
     ![update success](images/edit/edit.png)
@@ -250,13 +250,13 @@ Example usage:
 
 You can remove a contact from your _NetworkBook_ using the `delete` command, so that your _NetworkBook_ only contains contact details of those relevant.
 
-Format: `delete [index]`
+**Format:** `delete [index]`
 
-Parameters:
+**Parameters:**
 
 * `[index]` is the [index](#indices) of the contact in the list.
 
-Example usage:
+**Example usage:**
 
 * `delete 6`
     ![delete](images/delete/delete.png)
@@ -268,12 +268,12 @@ Example usage:
 
 You can also use the `delete` command to remove some information about a contact that you previously recorded.
 
-Format:
+**Format:**
 
 * Delete **single-valued** field: `delete [index of contact] [field prefix]`
 * Delete an entry of a **multi-valued** field: `delete [index of contact] [field prefix] /index [index of entry]`
 
-Parameters:
+**Parameters:**
 
 * `[index of contact]` is the [index](#indices) of the contact in the list.
 * `[field prefix]` specifies the field of information to delete.
@@ -295,7 +295,7 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
 </div>
 
-Example usage:
+**Example usage:**
 
 * `delete 1 /phone /index 2`
     ![delete phone](images/delete/delete-phone.png)
@@ -318,11 +318,11 @@ This command deletes **all** of your contacts. Only do this if you are sure.
 You can undo a clear command using [`undo`](#undo-last-change-to-networkbook-undo).
 </div>
 
-Format: `clear`
+**Format:** `clear`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `clear`
 
@@ -336,11 +336,11 @@ This category is centered around displaying and using contact details you previo
 
 You can use the `list` command to list all of your contacts. This resets any filtering previously applied to the list, so that you can quickly toggle to see all contacts.
 
-Format: `list`
+**Format:** `list`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `list`
 
@@ -353,9 +353,9 @@ Example usage:
 You can use the `find` command to search for contacts by their name, so that you can quickly reference a particular contact's details. 
 If the list is currently sorted in a particular manner (using [`sort`](#sort-contacts-list-sort-by-field-name-order-ascdesc)), the updated list will also be sorted in the same manner.
 
-Format: `find [name]`
+**Format:** `find [name]`
 
-Parameters:
+**Parameters:**
 
 * `[name]` is a term found in the names of the contacts you wish to find.
 
@@ -363,7 +363,7 @@ Parameters:
 Using the find command will update the filter status to `Filter by: name`. The find command will also override a filter command if you used it, and vice versa.
 </div>
 
-Example usage:
+**Example usage:**
 
 * `find Dav`
     ![search](images/find/find.png)
@@ -382,9 +382,9 @@ If the list is currently filtered in a certain manner (using [`find`](#find-a-co
 When you first open _NetworkBook_, the list starts off sorted by **name** in **ascending** order.
 </div>
 
-Format: `sort /by [field] /order [order]`
+**Format:** `sort /by [field] /order [order]`
 
-Parameters:
+**Parameters:**
 
 * `[field]` is the information to sort by.
 
@@ -405,7 +405,7 @@ Parameters:
 If sorting by an optional field (i.e. `graduation` or `priority`), all contacts without that field will be placed at the bottom of the sorted list regardless of sorting order.
 </div>
 
-Example usage:
+**Example usage:**
 
 * `sort /by grad /order desc`
     ![sort](images/sort/sort.png)
@@ -425,9 +425,9 @@ for easy viewing. If the list is currently sorted (using [`sort`](#sort-contacts
 You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-undo). You can reset filtering at any time using [`list`](#list-all-contacts-list).
 </div>
 
-Format: `filter /by [field] /with [term] /taken [taken]`
+**Format:** `filter /by [field] /with [term] /taken [taken]`
 
-Parameters:
+**Parameters:**
 
 * `[field]` is the information to filter by.
 
@@ -454,7 +454,7 @@ specified above.
 your system. It does not factor in other fields like graduation year.
 </div>
 
-Example usage:
+**Example usage:**
 
 * `filter /by tag /with friend colleague`
     ![filter](images/filter/filter.png)
@@ -471,9 +471,9 @@ Example usage:
 
 You can use the `open` command to open a contact's link so that you can conveniently access their social links when needed. This opens the webpage in your default web browser.
 
-Format: `open [index] /index [link index]`
+**Format:** `open [index] /index [link index]`
 
-Parameters:
+**Parameters:**
 
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[link index]` is the [index](#indices) of the link within the contact's link list.
@@ -485,7 +485,7 @@ It is optional to provide the link index. If not specified, it will **default to
 
 </div>
 
-Example usage:
+**Example usage:**
 
 * `open 2 /index 2`
   ![open link success](images/open/open-link.png)
@@ -498,9 +498,9 @@ Example usage:
 
 You can use the `email` command to open the default mailbox application to compose an email to the contact's email at `email index`, so that you can send emails to your contacts more efficiently.
 
-Format: `email [index] /index [email index]`
+**Format:** `email [index] /index [email index]`
 
-Parameters:
+**Parameters:**
 
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[email index]` is the [index](#indices) of the email address within the contact's email list.
@@ -511,7 +511,7 @@ It is optional to provide the email index. If not specified, it will **default t
 </div>
 
 
-Example usage:
+**Example usage:**
 
 * `email 1`
   ![open email success](images/open/open-email.png)
@@ -530,11 +530,11 @@ This category covers miscellaneous commands for additional functionalities in _N
 
 You can use the `undo` command to undo the last change to the list of contacts stored in _NetworkBook_ and/or the list of contacts displayed by _NetworkBook_, so that you can quickly revert mistaken/temporary _NetworkBook_ commands (excluding `undo`). This command can only undo changes made in your current session on _NetworkBook_.
 
-Format: `undo`
+**Format:** `undo`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `undo`
 
@@ -544,11 +544,11 @@ Example usage:
 
 You can use the `redo` command to redo the last change to the list of contacts stored in _NetworkBook_ and/or the list of contacts displayed by _NetworkBook_, so that you can quickly revert mistaken/temporary `undo` commands. This command only works if you have previously used `undo` commands in _NetworkBook_ that can be reversed.
 
-Format: `redo`
+**Format:** `redo`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `redo`
 
@@ -560,11 +560,11 @@ Example usage:
 
 You can use the `help` command to open a help window containing a link to this user guide. You can press the "Copy URL" button to copy the link, and paste it into your web browser to view this user guide web page.
 
-Format: `help`
+**Format:** `help`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `help`
   ![screenshot of help window](images/help.png)
@@ -581,11 +581,11 @@ You may need to manually save if _NetworkBook_'s permission to write to the data
 </div>
 
 
-Format: `save`
+**Format:** `save`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `save`
 
@@ -593,11 +593,11 @@ Example usage:
 
 You can use the `exit` command to close the _NetworkBook_ app.
 
-Format: `exit`
+**Format:** `exit`
 
-Parameters: N/A
+**Parameters:** N/A
 
-Example usage:
+**Example usage:**
 
 * `exit`
 
