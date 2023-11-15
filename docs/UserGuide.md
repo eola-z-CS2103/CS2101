@@ -33,7 +33,7 @@ On top of these advantages, we believe that contact management must be **efficie
 
 ## About This User Guide
 
-This user guide provides **in-depth documentation** on the various commands that are available in _NetworkBook_. These commands are grouped into **4** broad categories: 
+This user guide provides **in-depth documentation** on the various commands that are available in _NetworkBook_. These commands are grouped into **4 broad categories**: 
 
 1. [Manage contact information](#category-1---manage-contact-information)
 2. [View contact details](#category-2---view-contact-details)
